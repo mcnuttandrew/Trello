@@ -1,10 +1,8 @@
-<h1> <%= model.get('title') %> </h1>
+<ul id="menu"> 
+	<li><h1> <%= model.get('title') %>(<%= model.lists().length %>) </h1></li>
+	<li><div id="submenu"> </div></li>
+</ul>
+<ul class="lists"  id="sortable"></ul>
 
-<h3> Lists(<%= model.lists().length %>) </h3>
-<div class="new-list"></div>
-<a href="#/" class="btn">Index </a>
-<button class="remove-button btn button">Delete Board</button>
-<br>
-<ul class="lists"></ul>
 
 

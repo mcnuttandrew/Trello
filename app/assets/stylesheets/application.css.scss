@@ -19,21 +19,75 @@
 @import "bootstrap";
 @import "font-awesome";
 
-.lists{
-	display: inline;
-
-}
-
-li.list-single {
+.list-submit {
 	display: inline-block;
-	float: left;	 //still really uncomfortable with this
 }
 
-div.cardcard .btn{
+ul.lists {
+	min-height: 500px;
+}
+
+ul.lists>li{
+	display: inline-block;
+	border: thin solid black;
+	list-style: none;
+	float: left;
+}
+
+ul.lists h3{
+	display: block;
+	padding: 1%;
+	background: #FFFF99;
+}
+
+.listItem {
+	padding: 1%;
+	min-height: 200px;
+}
+
+li.cardcard .btn{
 	display: none;
 }
 
-div.cardcard:hover > .btn{
+li.cardcard:hover > .btn{
 	display: inline-block;
+}
+
+#menu {
+	display: block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background: #FFFF99;
+}
+
+#menu li{
+	display: inline-block;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background: #FFFF99;
+}
+
+#menu h1{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	background: #FFFF99;
+}
+
+
+#list-menu li{
+	display: inline;
+}
+
+.dragged {
+	transform: rotate(10deg);
+}
+
+.listItem {
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom: 2%;
 }
 

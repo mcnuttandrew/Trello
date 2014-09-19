@@ -1,5 +1,7 @@
 TrelloClone.Views.newList = Backbone.CompositeView.extend({
 	template: JST["lists/new"],
+	// tagName: "li",
+	// className: "new-list",
 	
 	events: {
 		"submit form.list-submit": "submit"

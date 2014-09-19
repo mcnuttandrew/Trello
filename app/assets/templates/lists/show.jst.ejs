@@ -1,5 +1,4 @@
-<li class="list-single">
-	<b><%= model.get("title")%></b> (<%= model.cards().length%>)
-		<div class="cards"></div>
-		<div class="new-card"></div>
-</li>
+<h3><%= model.escape("title") %> (<%= model.cards().length%>)</h3>
+<div class="new-card"></div>
+<ul class="card-wrapper cards" id="sortable"></ul>
+
