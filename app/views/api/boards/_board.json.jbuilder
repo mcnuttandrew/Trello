@@ -12,7 +12,7 @@ unless lists.nil? || lists.empty?
     cards = (list.cards ? list.cards : nil)
     # unless cards.nil? || cards.empty?
       json.cards(cards) do |card|
-        json.(card, :ord, :title, :created_at, :updated_at)
+        json.(card, :ord, :id, :title, :created_at, :updated_at)
       end
     # end
 	end

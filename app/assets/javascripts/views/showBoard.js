@@ -35,7 +35,7 @@ TrelloClone.Views.showBoard = Backbone.CompositeView.extend({
 	
 	removeList: function(list){
 		var subview = _.find(
-			this.subviews(".lists"), function(){
+			this.subviews(".lists"), function(list){
 				return subview.model === list;
 			}
 		);

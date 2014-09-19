@@ -11,9 +11,9 @@ TrelloClone.Views.showCard = Backbone.View.extend({
 		return this;
 	},
 	
-	
 	removeCard: function(){
 		event.preventDefault();
 		this.model.destroy();
+		this.remove();
 	}
 })
