@@ -2,7 +2,7 @@ TrelloClone.Views.newList = Backbone.CompositeView.extend({
 	template: JST["lists/new"],
 	
 	events: {
-		"submit form": "submit"
+		"submit form.list-submit": "submit"
 	},
 	
 	render: function(){
@@ -12,7 +12,6 @@ TrelloClone.Views.newList = Backbone.CompositeView.extend({
 	},
 	
 	submit: function(event){
-		
 		event.preventDefault();
 		var formData = $(event.currentTarget).serializeJSON();
 		var that = this;

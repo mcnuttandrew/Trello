@@ -1,1 +1,5 @@
-<%= this.model.get("title")%>
+<li class="list-single">
+	<b><%= model.get("title")%></b> (<%= model.cards().length%>)
+		<div class="cards"></div>
+		<div class="new-card"></div>
+</li>

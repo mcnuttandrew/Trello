@@ -19,3 +19,21 @@
 @import "bootstrap";
 @import "font-awesome";
 
+.lists{
+	display: inline;
+
+}
+
+li.list-single {
+	display: inline-block;
+	float: left;	 //still really uncomfortable with this
+}
+
+div.cardcard .btn{
+	display: none;
+}
+
+div.cardcard:hover > .btn{
+	display: inline-block;
+}
+
