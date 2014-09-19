@@ -1,0 +1,17 @@
+<h1> <%= model.get('title') %> </h1>
+
+<h3> Lists(<%= model.lists().length %>) </h3>
+<ol class="lists">
+	<% model.lists().each(function(list){ %>
+		<li> <%=list.get('title')%></li>
+	<% }) %>
+</ol>
+<br>
+
+<div class="new-list"></div>
+
+<!-- <button class="new-list btn button">New List</button> -->
+<br>
+<button class="remove-button btn button">Delete Board</button>
+
+<a href="#/">Index </a>

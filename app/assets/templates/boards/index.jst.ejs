@@ -1,0 +1,9 @@
+<h1> Index Hello</h1>
+	
+<ul>
+<% collection.each(function(board){ %>
+	<li><a href="#/boards/<%=board.get('id') %>"><%=board.get('title') %><a> </li>
+<%})%>
+</ul>
+
+<a href="#/new"> New Board<a> 
